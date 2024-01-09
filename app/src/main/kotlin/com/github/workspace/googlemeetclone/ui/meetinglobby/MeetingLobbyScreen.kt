@@ -65,8 +65,8 @@ import io.getstream.video.android.core.Call
 import io.getstream.video.android.core.ParticipantState
 import io.getstream.video.android.core.StreamVideo
 import io.getstream.video.android.core.model.VideoTrack
-import io.getstream.video.android.mock.StreamMockUtils
-import io.getstream.video.android.mock.mockCall
+import io.getstream.video.android.mock.StreamPreviewDataUtils
+import io.getstream.video.android.mock.previewCall
 import io.getstream.video.android.model.User
 
 @Composable
@@ -252,11 +252,11 @@ private fun MeetingLobbyFooter(
 @Preview
 @Composable
 fun MeetingLobbyScreenPreview() {
-    StreamMockUtils.initializeStreamVideo(LocalContext.current)
+    StreamPreviewDataUtils.initializeStreamVideo(LocalContext.current)
 
     GoogleMeetTheme {
         MeetingLobbyScreen(
-            call = mockCall,
+            call = previewCall,
             onJoinButtonClick = {},
             onNavigationIconClick = {},
         )

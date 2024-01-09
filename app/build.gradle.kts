@@ -57,9 +57,8 @@ android {
 
 dependencies {
     // stream
-    implementation(libs.stream.video.datastore)
-    implementation(libs.stream.video.compose)
-    implementation(libs.stream.video.compose.mock)
+    implementation(libs.stream.video.ui.compose)
+    implementation(libs.stream.video.ui.previewdata)
 
     // androidx
     implementation(libs.androidx.core.ktx)

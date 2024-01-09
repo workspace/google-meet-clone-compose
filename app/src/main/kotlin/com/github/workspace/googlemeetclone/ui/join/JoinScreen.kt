@@ -48,7 +48,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.github.workspace.googlemeetclone.ui.common.collectInLaunchedEffect
 import com.github.workspace.googlemeetclone.ui.theme.GoogleMeetTheme
-import io.getstream.video.android.mock.StreamMockUtils
+import io.getstream.video.android.mock.StreamPreviewDataUtils
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -141,7 +141,7 @@ fun JoinScreen(
 @Preview
 @Composable
 private fun JoinScreenPreview() {
-    StreamMockUtils.initializeStreamVideo(LocalContext.current)
+    StreamPreviewDataUtils.initializeStreamVideo(LocalContext.current)
 
     GoogleMeetTheme {
         JoinScreen(

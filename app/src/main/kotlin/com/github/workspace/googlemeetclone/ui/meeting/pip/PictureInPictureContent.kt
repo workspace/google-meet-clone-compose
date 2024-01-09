@@ -25,8 +25,8 @@ import io.getstream.video.android.compose.theme.VideoTheme
 import io.getstream.video.android.compose.ui.components.call.renderer.ParticipantVideo
 import io.getstream.video.android.compose.ui.components.call.renderer.RegularVideoRendererStyle
 import io.getstream.video.android.core.Call
-import io.getstream.video.android.mock.StreamMockUtils
-import io.getstream.video.android.mock.mockCall
+import io.getstream.video.android.mock.StreamPreviewDataUtils
+import io.getstream.video.android.mock.previewCall
 
 @Composable
 fun PictureInPictureContent(call: Call) {
@@ -51,9 +51,9 @@ fun PictureInPictureContent(call: Call) {
 @Preview
 @Composable
 fun PictureInPictureContentPreview() {
-    StreamMockUtils.initializeStreamVideo(LocalContext.current)
+    StreamPreviewDataUtils.initializeStreamVideo(LocalContext.current)
 
     VideoTheme {
-        PictureInPictureContent(call = mockCall)
+        PictureInPictureContent(call = previewCall)
     }
 }

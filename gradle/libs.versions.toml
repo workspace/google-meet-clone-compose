@@ -1,23 +1,23 @@
 [versions]
-androidGradlePlugin = "8.1.4"
+androidGradlePlugin = "8.2.1"
 androidDesugarJdkLibs = "2.0.4"
 androidxCore = "1.12.0"
 androidxLifecycle = "2.6.2"
 androidxComposeBom = "2023.10.01"
-androidxComposeCompiler = "1.5.4"
-androidxComposeNavigation = "2.7.5"
+androidxComposeCompiler = "1.5.7"
+androidxComposeNavigation = "2.7.6"
 androidxComposeMaterial3 = "1.1.2"
-androidxActivity = "1.8.1"
+androidxActivity = "1.8.2"
 
 androidxTestExt = "1.1.5"
 androidxEspresso = "3.5.1"
 
-kotlin = "1.9.20"
-kotlinSerialization = "1.6.0"
+kotlin = "1.9.21"
+kotlinSerialization = "1.6.2"
 kotlinSerializationConverter = "1.0.0"
 retrofit = "2.9.0"
 
-stream-video-compose = "0.4.2"
+stream-video-compose = "0.4.3"
 
 spotless = "6.22.0"
 
@@ -50,9 +50,8 @@ kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-
 kotlinx-serialization-converter = { group = "com.jakewharton.retrofit", name = "retrofit2-kotlinx-serialization-converter", version.ref = "kotlinSerializationConverter" }
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 
-stream-video-compose = { group = "io.getstream", name = "stream-video-android-compose", version.ref = "stream-video-compose" }
-stream-video-compose-mock = { group = "io.getstream", name = "stream-video-android-mock", version.ref = "stream-video-compose" }
-stream-video-datastore = { group = "io.getstream", name = "stream-video-android-datastore", version.ref = "stream-video-compose" }
+stream-video-ui-compose = { group = "io.getstream", name = "stream-video-android-ui-compose", version.ref = "stream-video-compose" }
+stream-video-ui-previewdata = { group = "io.getstream", name = "stream-video-android-previewdata", version.ref = "stream-video-compose" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
