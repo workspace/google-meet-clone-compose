@@ -70,7 +70,6 @@ import com.github.workspace.googlemeetclone.ui.meeting.pip.enterPictureInPicture
 import com.github.workspace.googlemeetclone.ui.meeting.pip.rememberPictureInPictureMode
 import com.github.workspace.googlemeetclone.utils.TextShareHelper
 import io.getstream.log.StreamLog
-import io.getstream.video.android.compose.lifecycle.CallLifecycle
 import io.getstream.video.android.compose.lifecycle.MediaPiPLifecycle
 import io.getstream.video.android.compose.permission.rememberCallPermissionsState
 import io.getstream.video.android.compose.ui.components.call.CallAppBar
@@ -110,11 +109,6 @@ fun MeetingScreen(call: Call, onCallDisconnected: () -> Unit, onUserLeaveCall: (
     }
 
     MediaPiPLifecycle(
-        call = call,
-        enableInPictureInPicture = true,
-    )
-
-    CallLifecycle(
         call = call,
         enableInPictureInPicture = true,
     )
