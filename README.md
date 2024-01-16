@@ -8,7 +8,7 @@
 
 ## Application 🚀
 
-[![Google Meet Clone Application](https://img.shields.io/badge/GoogleMeetClone-APK-green.svg?style=for-the-badge&logo=android)](https://github.com/workspace/google-meet-clone-compose/releases/download/v1/app-debug.apk)
+[![Google Meet Clone Application](https://img.shields.io/badge/GoogleMeetClone-APK-green.svg?style=for-the-badge&logo=android)](https://github.com/workspace/google-meet-clone-compose/releases/download/v1/app-release.apk)
 
 This project's application can be used with Stream's official demo web. Use call's id along with the following link format.
 
